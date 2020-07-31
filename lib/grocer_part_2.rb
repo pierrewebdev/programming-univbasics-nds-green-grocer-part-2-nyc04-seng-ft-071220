@@ -66,7 +66,6 @@ def checkout(cart, coupons)
   else
     cart_with_coupons = consolidated_cart
   end
-  cart_with_coupons = apply_coupons(consolidated_cart,coupons)
   cart_with_all_discounts = apply_clearance(cart_with_coupons)
   
   
