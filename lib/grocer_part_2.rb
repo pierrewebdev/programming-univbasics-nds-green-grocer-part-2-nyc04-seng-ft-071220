@@ -61,7 +61,7 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total
   consolidated_cart = consolidate_cart(cart)
   #check if there are any coupons
-  if coupons
+  if coupons.length < 1
     cart_with_coupons = apply_coupons(consolidated_cart,coupons)
   else
     cart_with_coupons = consolidated_cart
