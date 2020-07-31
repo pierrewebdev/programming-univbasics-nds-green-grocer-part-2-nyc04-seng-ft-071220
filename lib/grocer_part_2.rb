@@ -82,5 +82,5 @@ def checkout(cart, coupons)
     total_price += total_price(0.10)
   end
   total_price
-  #binding.pry
+  binding.pry
 end
