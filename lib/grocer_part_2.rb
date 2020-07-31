@@ -74,7 +74,7 @@ def checkout(cart, coupons)
   #binding.pry
   cart_with_all_discounts.each do |cart_item|
     total_price += cart_item[:price] 
-    #binding.pry
+    binding.pry
   end
   
   #check if total is over $100
